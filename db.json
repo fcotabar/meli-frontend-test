@@ -1,0 +1,631 @@
+{
+  "items": {
+    "author": {
+      "name": "Francisco",
+      "lastname": "Tabares"
+    },
+    "items": [
+      {
+        "id": "MLA886405818",
+        "title": "Samsung Galaxy A01 Core 16 Gb Negro 1 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 15499
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_814600-MLA43772081185_102020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA916425216",
+        "title": "Samsung Galaxy A72 128 Gb Awesome Black 6 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 72999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_901982-MLA45399247740_032021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA929208096",
+        "title": " Moto E7 32 Gb Rosa Coral 2 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 21780
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_943484-MLA46651720937_072021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA932453915",
+        "title": "Xiaomi Redmi Note 10 5g Dual Sim 128 Gb Plata Cromada 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 42999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_869005-MLA46351250024_062021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA915042596",
+        "title": "Samsung Galaxy A52 128 Gb Awesome Blue 6 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 57999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_899971-MLA45401328716_032021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA913281600",
+        "title": "Samsung Galaxy A02s 64 Gb Azul 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 28999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_970147-MLA45307104604_032021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA919229401",
+        "title": "Cat B26 Dual Sim 8 Mb Negro 8 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 14062
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_960380-MLA41280816402_032020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA915952837",
+        "title": "Samsung Galaxy A02 32 Gb Negro 2 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 19999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_748880-MLA45509953525_042021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA918893329",
+        "title": "Samsung Galaxy A32 128 Gb Awesome White 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 44999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_723831-MLA45658735494_042021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA914253644",
+        "title": "Samsung Galaxy A12 64 Gb Negro 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 30999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_665643-MLA45385132297_032021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA935213786",
+        "title": "Motorola G20 64 Gb 4 Gb Ram Azul Cielo",
+        "price": {
+          "currency": "ARS",
+          "amount": 28999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_674735-MLA47176978318_082021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA915979540",
+        "title": "Samsung Galaxy A02 64 Gb Negro 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 23999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_932750-MLA45509755691_042021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA912799625",
+        "title": "Samsung Galaxy A21s 128 Gb Azul 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 39999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_845674-MLA45142312038_032021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA934232037",
+        "title": "Nokia 24 M 64 Gb Azul 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 19999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_648210-MLA46711199548_072021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA919394331",
+        "title": "LG K61 128 Gb Titanio 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 31999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_867960-MLA46366600614_062021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA930046160",
+        "title": " Moto G30 128 Gb Gris Tornasol 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 35999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_990120-MLA45683745318_042021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA926680664",
+        "title": "Nokia 1.3 16 Gb Carbón 1 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 13149
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_872997-MLA45639668213_042021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA911027122",
+        "title": "LG K51s 64 Gb Titan 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 26999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_787273-MLA43530871636_092020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA918202853",
+        "title": " Moto E6i 32 Gb Gris Metálico 2 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 18999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_618420-MLA45656016205_042021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA914665016",
+        "title": "LG K22 32 Gb Blue 2 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 19999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_836391-MLA44123219615_112020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA923177319",
+        "title": "Celular Smartphone Alcatel 1v Plus 32gb 2gb Ram Huella 6,22 ",
+        "price": {
+          "currency": "ARS",
+          "amount": 14790
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_783600-MLA46219542363_052021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA930312688",
+        "title": "Samsung Galaxy A12 128 Gb Negro 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 35399
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_860714-MLA45385132335_032021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA921922571",
+        "title": "Celular Liberado Motorola Moto E7i Power 32gb Rojo Gtia Pc",
+        "price": {
+          "currency": "ARS",
+          "amount": 19999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_625423-MLA46125192173_052021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA905132552",
+        "title": "Apple iPhone SE (2da Generación) 64 Gb - Negro",
+        "price": {
+          "currency": "ARS",
+          "amount": 119999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_658260-MLA46552695787_062021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA923362714",
+        "title": "Samsung Galaxy S20 Fe 128 Gb Cloud Mint 6 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 86999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_805091-MLA44179839622_112020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA918326691",
+        "title": "Sansei S191 Dual Sim 3 Mb Negro/rojo 4 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 3490
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_896790-MLA44547132275_012021-I.jpg",
+        "free_shipping": false,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA925015384",
+        "title": "Quantum Up32 Dual Sim 32 Gb Negro 1 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 11999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_927888-MLA46273160288_062021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA916412121",
+        "title": "LG K22+ 64 Gb Titan 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 22999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_883347-MLA44629766640_012021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA914873224",
+        "title": "Kodak Smartway L2 Libre Dual Sim 16/2gb Android 10q Violeta",
+        "price": {
+          "currency": "ARS",
+          "amount": 11999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_739581-MLA45465476096_042021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA839172034",
+        "title": "Blu Z5 Dual Sim 32 Mb Gris 32 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 4670
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_860954-MLA40651683544_022020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Misiones"
+      },
+      {
+        "id": "MLA928507312",
+        "title": "LG K42 64 Gb Gray 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 24999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_645861-MLA46578187640_072021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA932485059",
+        "title": "Samsung Galaxy A22 128gb 4gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 39999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_905093-MLA46955388262_082021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA877292465",
+        "title": "Energizer Energy E10+ Dual Sim 32 Mb Negro 32 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 4199
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_652578-MLA42643407037_072020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA932267165",
+        "title": "Samsung Galaxy M12 (5000 Mah) Dual Sim 128 Gb Black 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 35999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_838903-MLA46771080799_072021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA912337209",
+        "title": "Celular Kodak Smartway L1 Pro Smartphone 1gb 16gb Android 10",
+        "price": {
+          "currency": "ARS",
+          "amount": 11999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_704381-MLA45244080947_032021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA897806631",
+        "title": "Noblex N405 Dual Sim 8 Gb Negro 2 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 8613.44
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_626394-MLA44099561210_112020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA920884160",
+        "title": "Celular Libre 3g 2g Teclas Y Pantalla Grande Panacom Adultos",
+        "price": {
+          "currency": "ARS",
+          "amount": 6499
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_710446-MLA46423186197_062021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Chaco"
+      },
+      {
+        "id": "MLA904121863",
+        "title": "Zte Blade A3 Lite 16 Gb Negro 1 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 10093
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_655797-MLA43765157587_102020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA911622254",
+        "title": "Samsung Galaxy A21s 64 Gb Negro 4 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 39999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_824249-MLA44333730675_122020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA896536637",
+        "title": "LG K20 16 Gb Aurora Black 1 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 16999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_895473-MLA42513662374_072020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA927155939",
+        "title": "Nuevo! Quantum Yolo Rojo 32gb 1gb 3g ",
+        "price": {
+          "currency": "ARS",
+          "amount": 10499
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_775797-MLA46375885578_062021-O.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA928942368",
+        "title": "LG K40s 32 Gb Aurora Black 2 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 17999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_807721-MLA42043400039_062020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA907933675",
+        "title": "Samsung Galaxy S21 5g 128 Gb Phantom Gray 8 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 133999
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_794971-MLA44848256543_022021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA913153297",
+        "title": "Quantum Mini Dual Sim 8 Gb Gris 512 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 8983
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_755260-MLA31897302065_082019-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA931368132",
+        "title": "Tcl L10+ 32 Gb Power Gray 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 18690
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_958285-MLA44962619530_022021-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA910657205",
+        "title": "Philco P241 Dual Sim 512 Mb Negro 256 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 8499
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_672837-MLA40668754262_022020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA928460250",
+        "title": "Xiaomi Pocophone Poco X3 Nfc Dual Sim 128 Gb  Shadow Gray 6 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 65785
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_762809-MLA43875404059_102020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      },
+      {
+        "id": "MLA1100859753",
+        "title": "Ipro W9 Dual Sim 512 Mb Negro 256 Mb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 5886
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_694169-MLA40667951640_022020-I.jpg",
+        "free_shipping": true,
+        "ubication": "Misiones"
+      },
+      {
+        "id": "MLA912338372",
+        "title": "Alcatel 1 8 Gb Negro Metálico 1 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 11976.31
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_996401-MLA31932406532_082019-I.jpg",
+        "free_shipping": true,
+        "ubication": "Buenos Aires"
+      },
+      {
+        "id": "MLA836687503",
+        "title": "Cat S60 Dual Sim 32 Gb Negro/plata 3 Gb Ram",
+        "price": {
+          "currency": "ARS",
+          "amount": 100000
+        },
+        "condition": "new",
+        "picture": "http://http2.mlstatic.com/D_862403-MLA31912191302_082019-I.jpg",
+        "free_shipping": true,
+        "ubication": "Capital Federal"
+      }
+    ],
+    "categories": ["Celulares y Teléfonos", "Celulares y Smartphones"]
+  },
+  "MLA886405818": {
+    "author": {
+      "name": "Carlos",
+      "lastname": "Jaramillo"
+    },
+    "item": {
+      "categories": ["Celulares y Teléfonos", "Celulares y Smartphones"],
+      "id": "MLA886405818",
+      "title": "Samsung Galaxy A01 Core 16 Gb Negro 1 Gb Ram",
+      "price": {
+        "currency": "ARS",
+        "amount": 15499
+      },
+      "condition": "new",
+      "sold_quantity": 500,
+      "picture": "http://http2.mlstatic.com/D_814600-MLA43772081185_102020-O.jpg",
+      "description": "Pensado para vos\nEl Samsung A01 Core posee el novedoso sistema operativo Android 10 que incorpora respuestas inteligentes y acciones sugeridas para todas tus aplicaciones. Entre sus diversas funcionalidades encontrarás el tema oscuro, navegación por gestos y modo sin distracciones, para que completes tus tareas mientras disfrutás al máximo tu dispositivo.\n\nMomentos únicos, capturas reales\nCapturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.\n\nAdemás, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.\n\nMás para ver\nCon su pantalla PLS de 5.3 \", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.\n\nBatería para todo el día\nSu batería de 3000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.\n\nLlevá lo esencial\nSi buscás un dispositivo que te permita almacenar fotos, videos y archivos indispensables, este celular con 16 GB de memoria interna es para vos.",
+      "free_shipping": true
+    }
+  }
+}
