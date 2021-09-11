@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Loading } from './Loading';
+import { SearchResultsItem } from './SearchResultsItem';
+import { Link } from 'react-router-dom';
 
 export const SearchResults = ({ query }) => {
   const [searchItems, setSearchItems] = useState('');
@@ -26,7 +28,25 @@ export const SearchResults = ({ query }) => {
     //   .catch((err) => console.log(err));
     getItems();
   }, []);
-  console.log(searchItems);
+  // console.log(searchItems);
 
-  return <>{!searchItems ? <Loading /> : <h1>Some results... {query}</h1>}</>;
+  if (!searchItems) return <Loading />;
+  else
+    return (
+      <>
+        <h1 className="items__breadcrumbs">breadcrums</h1>
+
+        <ol className="items__list">
+          {searchItems.map((item) => (
+            <Link
+              className="items__link"
+              key={item.id}
+              to={`/items/${item.id}`}
+            >
+              <SearchResultsItem item={item} />
+            </Link>
+          ))}
+        </ol>
+      </>
+    );
 };
