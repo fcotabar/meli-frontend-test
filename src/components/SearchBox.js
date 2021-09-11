@@ -1,9 +1,18 @@
 import React from 'react';
+import searchIcon from '../assets/img/ic_Search@2x.png';
 
-export const SearchBox = () => {
+export const SearchBox = ({ inputValue, onInputChange, onSubmitSearch }) => {
   return (
-    <div>
-      <h1>here is the search box</h1>
-    </div>
+    <form onSubmit={onSubmitSearch} className="search__nav-form">
+      <input
+        className="search__nav-input"
+        value={inputValue}
+        onChange={onInputChange}
+        placeholder="Ingresa tu búsqueda..."
+      />
+      <button className="search__nav-btn">
+        <img src={searchIcon} alt="Search Icon" className="search__nav-icon" />
+      </button>
+    </form>
   );
 };

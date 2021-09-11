@@ -1,6 +1,2 @@
-body,
-html {
-  background-color: green;
-}
-
-@import './base/settings', './base/base';
+@import './base/settings', './base/base', './components/home',
+  './components/search-box';
