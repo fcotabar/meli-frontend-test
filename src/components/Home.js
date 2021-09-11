@@ -60,7 +60,7 @@ export const Home = (props) => {
       </header>
       <section className="items__results">
         {search && <SearchResults query={search} />}
-        {id && <ItemDetail />}
+        {id && <ItemDetail itemId={id} />}
       </section>
     </>
   );

@@ -17,15 +17,6 @@ export const SearchResults = ({ query }) => {
       const items = data.items.filter((item, i) => i < 4 && item);
       setSearchItems(items);
     };
-    // axios
-    //   .get('http://localhost:3000/items')
-    //   .then((res) => {
-    //     // console.log(res.data);
-    //     setSearchItems(res.data.items);
-    //     console.log(searchItems);
-    //     // return res.json();
-    //   })
-    //   .catch((err) => console.log(err));
     getItems();
   }, []);
   // console.log(searchItems);
