@@ -1,19 +1,41 @@
 .breadcrumbs {
   color: $dark-grey-color;
   font-size: 1.4rem;
-  display: flex;
-  list-style: none;
+  // width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  // display: grid;
+  // // grid-auto-flow: column;
+  // grid-template-columns: repeat(auti-fill, minmax(200px, 1fr));
+  // // list-style: none;
+  // list-style-type: none;
 
   &__item-title {
+    // display: inline-block;
+
+    width: 200px;
     font-weight: bold;
     margin-right: 0.5rem;
   }
 
+  &__item-list {
+    grid-column: span 4;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
   &__item {
+    // display: inline-block;
+    // width: 100px;
     padding: 0 0.5rem;
+    // justify-self: center;
   }
 
   &__item-division {
+    display: none;
     margin-left: 0.5rem;
   }
 }
