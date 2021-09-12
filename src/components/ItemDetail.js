@@ -9,7 +9,9 @@ export const ItemDetail = ({ itemId }) => {
 
   const [itemDetail, setItemDetail] = useState('');
 
-  const url = `http://localhost:3000/${itemId}`;
+  // const url = `http://localhost:3000/${itemId}`;
+
+  const url = `http://localhost:4000/api/items/${itemId}`;
 
   useEffect(() => {
     const getItems = async () => {
@@ -49,7 +51,12 @@ export const ItemDetail = ({ itemId }) => {
               <h2 className="checkout__title">{title}</h2>
               <h3 className="checkout__price">
                 {formatCurrency(price.amount, price.currency)}{' '}
-                <span className="checkout__price--decimal">00</span>
+                <span className="checkout__price--decimal">
+                  {price.decimals.toLocaleString('en-US', {
+                    minimumIntegerDigits: 2,
+                    useGrouping: false,
+                  })}
+                </span>
               </h3>
               <button className="btn btn--secondary">Comprar</button>
             </div>
