@@ -39,6 +39,10 @@
       color: $grey-color;
       vertical-align: middle;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &-btn {

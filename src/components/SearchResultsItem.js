@@ -8,16 +8,18 @@ export const SearchResultsItem = ({ item }) => {
   return (
     <li className="list-item">
       <figure className="list-item__picture">
-        <img src={picture} alt={title} />
+        <img className="list-item__img" src={picture} alt={title} />
       </figure>
-      <span className="list-item__info">
-        <h3 className="list-item__price">
-          {formatCurrency(price.amount, price.currency)}
-          {free_shipping && <img src={freeShipping} alt="Free shipping" />}
-        </h3>
-        <h2 className="list-item__title">{title}</h2>
-      </span>
-      <span className="list-item__location">{ubication}</span>
+      <div className="list-item__details">
+        <span className="list-item__info">
+          <h3 className="list-item__price">
+            {formatCurrency(price.amount, price.currency)}
+            {free_shipping && <img src={freeShipping} alt="Free shipping" />}
+          </h3>
+          <h2 className="list-item__title">{title}</h2>
+        </span>
+        <span className="list-item__location">{ubication}</span>
+      </div>
     </li>
   );
 };
