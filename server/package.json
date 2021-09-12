@@ -7,7 +7,7 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "fcotabar@gmail.com",
+  "author": "Francisco Tabares <fcotabar@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.4",

@@ -8,7 +8,7 @@ export const SearchBox = ({ inputValue, onInputChange, onSubmitSearch }) => {
         className="search__nav-input"
         value={inputValue}
         onChange={onInputChange}
-        placeholder="Ingresa tu búsqueda..."
+        placeholder="Nunca dejes de buscar"
       />
       <button className="search__nav-btn">
         <img src={searchIcon} alt="Search Icon" className="search__nav-icon" />

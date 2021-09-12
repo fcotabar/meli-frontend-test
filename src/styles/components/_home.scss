@@ -12,11 +12,12 @@
   align-items: center;
   justify-content: space-between;
   width: 80%;
+  max-width: 1200px;
   height: 100%;
 
   &-logo {
     height: 3.5rem;
-    // margin-right: 2rem;
+    margin-right: 2rem;
   }
 
   &-form {
@@ -54,6 +55,7 @@
 
 .items__results {
   width: 80%;
+  max-width: 1200px;
   margin: 2rem auto;
   min-height: 70vh;
 }
