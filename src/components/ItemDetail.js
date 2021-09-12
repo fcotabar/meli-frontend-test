@@ -3,9 +3,10 @@ import axios from 'axios';
 
 import { formatCurrency } from '../utils/formatCurrency';
 import { Loading } from './Loading';
+import { Breadcrumbs } from './Breadcrumbs';
 
-export const ItemDetail = ({ itemId }) => {
-  console.log(itemId);
+export const ItemDetail = ({ itemId, categories }) => {
+  // console.log(itemId);
 
   const [itemDetail, setItemDetail] = useState('');
 
@@ -22,7 +23,7 @@ export const ItemDetail = ({ itemId }) => {
 
     getItems();
   }, [url]);
-  console.log(itemDetail);
+  // console.log(itemDetail);
 
   const { title, picture, sold_quantity, price, description, condition } =
     itemDetail;
@@ -31,7 +32,8 @@ export const ItemDetail = ({ itemId }) => {
   else
     return (
       <>
-        <h1 className="items__breadcrumbs">breadcrums</h1>
+        {categories && <Breadcrumbs categories={categories} />}
+
         <article className="item__content">
           <div className="item__info">
             <picture className="item__image">

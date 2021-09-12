@@ -3,30 +3,31 @@ import axios from 'axios';
 import { Loading } from './Loading';
 import { SearchResultsItem } from './SearchResultsItem';
 import { Link } from 'react-router-dom';
+import { Breadcrumbs } from './Breadcrumbs';
 
-export const SearchResults = ({ query }) => {
+export const SearchResults = ({ query, categories, onSetCategories }) => {
   const [searchItems, setSearchItems] = useState('');
-  // const items = [];
-  // const url = 'https://api.mercadolibre.com/sites/MLA/search?q=celular';
 
-  // const url = 'http://localhost:3000/items';
   const url = `http://localhost:4000/api/items?q=${encodeURI(query)}`;
 
   useEffect(() => {
     const getItems = async () => {
-      const { data } = await axios.get(url);
-      const items = data.items.filter((item, i) => i < 4 && item);
+      const {
+        data: { items, categories },
+      } = await axios.get(url);
+      console.log(categories);
       setSearchItems(items);
+      onSetCategories(categories);
     };
     getItems();
-  }, [url]);
+  }, [url, onSetCategories]);
   // console.log(searchItems);
 
   if (!searchItems) return <Loading />;
   else
     return (
       <>
-        <h1 className="items__breadcrumbs">breadcrums</h1>
+        {categories && <Breadcrumbs categories={categories} />}
 
         <ol className="items__list">
           {searchItems.map((item) => (

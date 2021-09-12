@@ -3,7 +3,7 @@ import freeShipping from '../assets/img/ic_shipping.png';
 import { formatCurrency } from '../utils/formatCurrency';
 
 export const SearchResultsItem = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   const { picture, title, price, free_shipping, ubication } = item;
   return (
     <li className="list-item">
