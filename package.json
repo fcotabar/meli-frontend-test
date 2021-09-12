@@ -19,7 +19,7 @@
   },
   "scripts": {
     "mocks": "concurrently \"PORT=3001 react-scripts start\" \" npx json-server --watch db.json\"",
-    "start": "concurrently \"PORT=3001 react-scripts start\" \" npx json-server --watch db.json\"",
+    "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -9,7 +9,8 @@ export const SearchResults = ({ query }) => {
   // const items = [];
   // const url = 'https://api.mercadolibre.com/sites/MLA/search?q=celular';
 
-  const url = 'http://localhost:3000/items';
+  // const url = 'http://localhost:3000/items';
+  const url = `http://localhost:4000/api/items?q=${encodeURI(query)}`;
 
   useEffect(() => {
     const getItems = async () => {
@@ -18,7 +19,7 @@ export const SearchResults = ({ query }) => {
       setSearchItems(items);
     };
     getItems();
-  }, []);
+  }, [url]);
   // console.log(searchItems);
 
   if (!searchItems) return <Loading />;
