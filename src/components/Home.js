@@ -11,16 +11,7 @@ import { SearchResults } from './SearchResults';
 import { ItemDetail } from './ItemDetail';
 import { useEffect } from 'react/cjs/react.development';
 
-/**
- * CajadeBúsqueda:“/”
- * Resultadosdelabúsqueda:“/items?search=”
- * Detalledelproducto:“/items/:id”
- * @param {*} props
- * @returns
- */
-
 export const Home = (props) => {
-  // console.log(props);
   const { location, history, match } = props;
   const { id } = match.params;
   const { search } = queryString.parse(location.search);
@@ -29,23 +20,17 @@ export const Home = (props) => {
   const [itemsCategories, setItemsCategories] = useState([]);
   const [itemsResults, setItemsResults] = useState('');
 
-  // if (!id && !search) setItemsCategories([]);
-
-  // console.log(id);
-
-  // console.log(search);
   useEffect(() => {
     if (!id && !search) setItemsCategories([]);
   }, [id, search, setItemsCategories]);
 
   const handleSearchInput = (e) => {
-    // console.log(e);
     setSearchText(e.target.value);
   };
+
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchText.trim().length > 2) {
-      // console.log('searching....');
       setSearchText('');
       setItemsResults('');
       history.push(`/items?search=${searchText}`);

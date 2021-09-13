@@ -6,24 +6,18 @@ import { Loading } from './Loading';
 import { Breadcrumbs } from './Breadcrumbs';
 
 export const ItemDetail = ({ itemId, categories }) => {
-  // console.log(itemId);
-
   const [itemDetail, setItemDetail] = useState('');
-
-  // const url = `http://localhost:3000/${itemId}`;
 
   const url = `http://localhost:4000/api/items/${itemId}`;
 
   useEffect(() => {
     const getItems = async () => {
       const { data } = await axios.get(url);
-      // console.log(data);
       setItemDetail(data.item);
     };
 
     getItems();
   }, [url]);
-  // console.log(itemDetail);
 
   const { title, picture, sold_quantity, price, description, condition } =
     itemDetail;
