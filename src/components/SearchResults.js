@@ -1,45 +1,63 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import { StatusCodes } from 'http-status-codes';
+
 import { Loading } from './Loading';
 import { SearchResultsItem } from './SearchResultsItem';
-import { Link } from 'react-router-dom';
 import { Breadcrumbs } from './Breadcrumbs';
 
-export const SearchResults = ({ query, categories, onSetCategories }) => {
-  const [searchItems, setSearchItems] = useState('');
+export const SearchResults = ({
+  query,
+  items: itemsResults,
+  onSetItems,
+  categories,
+  onSetCategories,
+}) => {
+  const history = useHistory();
+  const url = `http://localhost:4000/api/items?q=${query}`;
 
-  const url = `http://localhost:4000/api/items?q=${encodeURI(query)}`;
+  try {
+    useEffect(() => {
+      const getItems = async () => {
+        const {
+          status,
+          data: { items, categories },
+        } = await axios.get(url);
 
-  useEffect(() => {
-    const getItems = async () => {
-      const {
-        data: { items, categories },
-      } = await axios.get(url);
-      console.log(categories);
-      setSearchItems(items);
-      onSetCategories(categories);
-    };
-    getItems();
-  }, [url, onSetCategories]);
-  // console.log(searchItems);
+        if (status === StatusCodes.OK && items.length === 0) {
+          toast.warn('No hay publicaciones que coincidan con tu búsqueda');
+          history.replace('/');
+          return;
+        }
 
-  if (!searchItems) return <Loading />;
-  else
-    return (
-      <>
-        {categories && <Breadcrumbs categories={categories} />}
+        onSetItems({ status, items });
+        onSetCategories(categories);
+      };
+      getItems();
+    }, [url, onSetItems, onSetCategories, history]);
 
-        <ol className="items__list">
-          {searchItems.map((item) => (
-            <Link
-              className="items__link"
-              key={item.id}
-              to={`/items/${item.id}`}
-            >
-              <SearchResultsItem item={item} />
-            </Link>
-          ))}
-        </ol>
-      </>
-    );
+    if (!itemsResults) return <Loading />;
+    else
+      return (
+        <>
+          {categories && <Breadcrumbs categories={categories} />}
+
+          <ol className="items__list">
+            {itemsResults.items.map((item) => (
+              <Link
+                className="items__link"
+                key={item.id}
+                to={`/items/${item.id}`}
+              >
+                <SearchResultsItem item={item} />
+              </Link>
+            ))}
+          </ol>
+        </>
+      );
+  } catch (error) {
+    console.log(error);
+  }
 };

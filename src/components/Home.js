@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import queryString from 'query-string';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { SearchBox } from './SearchBox';
 
@@ -25,6 +27,7 @@ export const Home = (props) => {
 
   const [searchText, setSearchText] = useState('');
   const [itemsCategories, setItemsCategories] = useState([]);
+  const [itemsResults, setItemsResults] = useState('');
 
   // if (!id && !search) setItemsCategories([]);
 
@@ -44,7 +47,8 @@ export const Home = (props) => {
     if (searchText.trim().length > 2) {
       // console.log('searching....');
       setSearchText('');
-      history.push(`/items?search=${encodeURI(searchText)}`);
+      setItemsResults('');
+      history.push(`/items?search=${searchText}`);
     }
   };
 
@@ -59,6 +63,7 @@ export const Home = (props) => {
               alt="Logo Mercado Libre"
             />
           </Link>
+          <ToastContainer />
           <SearchBox
             inputValue={searchText}
             onInputChange={handleSearchInput}
@@ -70,6 +75,8 @@ export const Home = (props) => {
         {search && (
           <SearchResults
             query={search}
+            items={itemsResults}
+            onSetItems={setItemsResults}
             categories={itemsCategories}
             onSetCategories={setItemsCategories}
           />

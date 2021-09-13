@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const { StatusCodes } = require('http-status-codes');
 
 const ItemsAdapter = require('../utils/items.adapter');
 const {
@@ -10,29 +11,33 @@ const {
   LIMIT_ITEMS_TO,
 } = require('../utils/config');
 
+axios.defaults.headers['Content-Type'] = 'application/json; charset=UTF-8';
+
 router.get('/:id', async (req, res) => {
-  try {
-    const { id: itemId } = req.params;
-    // console.log(itemId);
+  const { id: itemId } = req.params;
+  // console.log(itemId);
 
-    const itemUrl = `${ITEMS_DETAIL_URL}${itemId.trim()}`;
-    const descriptionUrl = `${itemUrl}/description`;
+  const itemUrl = `${ITEMS_DETAIL_URL}${itemId.trim()}`;
+  const descriptionUrl = `${itemUrl}/description`;
 
-    const { data: itemData } = await axios.get(itemUrl);
+  const { data: itemData } = await axios.get(itemUrl);
 
-    const {
-      data: { plain_text: description },
-    } = await axios.get(descriptionUrl);
-
-    const itemDetail = {
+  const {
+    data: { plain_text: description },
+  } = await axios.get(descriptionUrl).catch((error) => {
+    res.status(StatusCodes.BAD_REQUEST).json({
       author,
-      item: ItemsAdapter.getItemDetail({ ...itemData, description }),
-    };
+      error,
+      status: StatusCodes.BAD_REQUEST,
+    });
+  });
 
-    res.json(itemDetail);
-  } catch (error) {
-    // throw new NotFound(error.message);
-  }
+  const itemDetail = {
+    author,
+    item: ItemsAdapter.getItemDetail({ ...itemData, description }),
+  };
+
+  res.status(StatusCodes.OK).json(itemDetail);
 });
 
 router.get('/', async (req, res) => {
@@ -41,7 +46,13 @@ router.get('/', async (req, res) => {
 
     const url = `${SEARCH_ITEMS_URL}${query}&limit=${LIMIT_ITEMS_TO}`;
 
-    const { data } = await axios.get(url);
+    const { data } = await axios.get(url).catch((error) => {
+      res.status(StatusCodes.BAD_REQUEST).json({
+        author,
+        error,
+        status: StatusCodes.BAD_REQUEST,
+      });
+    });
 
     const object = {
       author,
@@ -49,9 +60,9 @@ router.get('/', async (req, res) => {
       items: ItemsAdapter.getItems(data.results),
     };
 
-    res.json(object);
-  } catch (err) {
-    console.log(err);
+    res.status(StatusCodes.OK).json(object);
+  } catch (error) {
+    console.log(error);
   }
 });
 
