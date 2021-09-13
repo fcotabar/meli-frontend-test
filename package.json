@@ -24,7 +24,6 @@
     "devStart": "concurrently \" yarn --cwd ./server dev \" \"PORT=3001 react-scripts start\"",
     "mocks": "concurrently \"PORT=3001 react-scripts start\" \" npx json-server --watch db.json\"",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
